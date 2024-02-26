@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Laptops</title>
+<style>
+table{
+color:purple;
+}
+</style>
+</head>
+<body>
+<table border=1>
+<tr>
+<th>Id</th>
+<th>Name</th>
+</tr>
+<tr th:each="laptop1 : ${laptop1}">
+<td th:text="${laptop1.id}"></td>
+<td th:text="${laptop1.name}"></td>
+</tr>
+</table>
+
+</body>
+</html>
